@@ -1,0 +1,183 @@
+:root {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #f3f4f6;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #eef2f7;
+  color: #1f2937;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.page-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 32px 24px 80px;
+}
+
+.site-header {
+  border-bottom: 1px solid #dfe3ea;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.site-header a {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-card {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  gap: 24px;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #dfe3ea;
+  border-radius: 14px;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: #0f766e;
+}
+
+.hero-card h1 {
+  margin: 12px 0;
+  font-size: clamp(2.3rem, 4vw, 4rem);
+  line-height: 1.1;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid #111827;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: #111827;
+  color: white;
+}
+
+.btn.secondary {
+  background: white;
+  color: #111827;
+}
+
+.photo-box {
+  border: 1px solid #dfe3ea;
+  background: #e5e7eb;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.section-row,
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.section-row {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 24px;
+}
+
+.grid.items-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card,
+.project-box,
+.blog-item,
+.contact-form {
+  background: white;
+  border: 1px solid #dfe3ea;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.card h3,
+.project-box h3,
+.blog-item h3 {
+  margin-top: 0;
+}
+
+.project-box,
+.blog-item {
+  min-height: 180px;
+}
+
+.list-item {
+  margin: 10px 0;
+}
+
+.content-page {
+  padding-top: 10px;
+}
+
+.blog-list {
+  display: grid;
+  gap: 20px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 14px;
+  max-width: 640px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font: inherit;
+}
+
+.contact-form textarea {
+  min-height: 130px;
+}
+
+@media (max-width: 768px) {
+  .hero-card,
+  .section-row,
+  .grid.items-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .page-shell {
+    padding-inline: 16px;
+  }
+}
